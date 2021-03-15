@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>UPDATE</title>
+  </head>
+  <body>
+    <form method="POST" align="center">
+      <h1>Update {{employee.ename}}'s information</h1>
+      {{form.as_p}}
+      {% csrf_token %}
+      <!-- <p>ENO:<input type="text" name="eno" value="{{employee.eno}}"></p>
+      <p>ENAME:<input type="text" name="ename" value="{{employee.ename}}"></p>
+      <p>ESAL:<input type="text" name="esal" value="{{employee.esal}}"></p>
+      <p>EADRR:<input type="text" name="eadrr" value="{{employee.eadrr}}"></p> -->
+      <input type="submit" value="UPDATE">
+    </form>
+
+
+  </body>
+</html>

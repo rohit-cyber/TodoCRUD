@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RETRIEVE</title>
+  </head>
+  <body>
+    <table border=2 align='center'>
+      <thead>
+        <th>ENO</th>
+        <th>ENAME</th>
+        <th>ESAL</th>
+        <th>EADRESS</th>
+        <th>ACTIONS</th>
+      </thead>
+      {% for employee in employees %}
+      <tr>
+        <td>{{employee.eno}}</td>
+        <td>{{employee.ename}}</td>
+        <td>{{employee.esal}}</td>
+        <td>{{employee.eadrr}}</td>
+        <td><a href="update/{{employee.id}}">UPDATE</a> &nbsp&nbsp<a href="delete/{{employee.id}}">DELETE</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+    <a href="/create">ADD NEW EMPLOYEE</a>
+
+  </body>
+</html>
